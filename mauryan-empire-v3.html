@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Maurya Empire: 136 years that shaped a subcontinent</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Literata:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#1b2a4e;--panel:#132043;--land:#2b3e72;--coast:#6a85c4;--ink:#f6f1e4;--mute:#bcc6df;--gold:#f2b84b;--goldline:#ffdb8e;--grey:#8190b8;--rule:#35487d;--peacock:#46d1b3;--terr:#f2b84b;
+--hd:"Yatra One",Georgia,serif;--bd:Literata,Georgia,serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#eef3fb;--panel:#dce6f5;--land:#ffffff;--coast:#8ea6d2;--ink:#172447;--mute:#475781;--gold:#b8730a;--goldline:#8a5200;--grey:#9aa9ca;--rule:#bccbe8;--peacock:#0d7f69;--terr:#d99a1f}}
+:root[data-theme="light"]{--bg:#eef3fb;--panel:#dce6f5;--land:#ffffff;--coast:#8ea6d2;--ink:#172447;--mute:#475781;--gold:#b8730a;--goldline:#8a5200;--grey:#9aa9ca;--rule:#bccbe8;--peacock:#0d7f69;--terr:#d99a1f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.65 var(--bd);transition:background-color 1.2s}
+.top{max-width:1240px;margin:0 auto;padding:11vh 4vw 6vh}
+h1{font:400 clamp(40px,7.4vw,104px)/1.02 var(--hd);margin:0 0 26px;max-width:14ch}
+.top p{max-width:33em;margin:0;color:var(--mute);font-size:21px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 4vw;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:5vw}
+.fig{position:sticky;top:max(3vh,env(safe-area-inset-top,0px));height:94vh;display:flex;flex-direction:column;padding:2vh 0}
+.sheet{flex:1;min-height:0;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:10px}
+svg{display:block;width:100%;height:100%}
+.land{fill:var(--land);stroke:var(--coast);stroke-width:2;stroke-linejoin:round}
+.river{fill:none;stroke:var(--peacock);stroke-width:1.6;opacity:.85}
+.t{transition:opacity .9s,fill .9s;opacity:0}
+.t.g{fill:var(--terr);stroke:var(--ink);stroke-opacity:.55;stroke-width:1.5;fill-opacity:.85}
+.t.nanda{fill:var(--grey);stroke:var(--coast);stroke-width:1.5;fill-opacity:.9}
+#peak{fill:none;stroke:var(--goldline);stroke-width:1.5;stroke-dasharray:5 4}
+.city{opacity:0;transition:opacity .6s}
+.city circle{fill:var(--gold);stroke:var(--panel);stroke-width:2}
+.city text{font:600 11px var(--bd);fill:var(--ink);paint-order:stroke;stroke:var(--panel);stroke-width:3}
+.cap{margin:14px 0 12px;font-style:italic;font-size:16px;line-height:1.45;color:var(--mute);min-height:2.9em}
+.tl{position:relative;height:46px;margin:0 6px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:var(--rule)}
+.tl i{position:absolute;left:0;top:8px;height:2px;background:var(--gold);transition:width .6s;width:0}
+.tl button{position:absolute;top:0;transform:translateX(-50%);background:none;border:0;padding:0;cursor:pointer;color:var(--mute);font:600 13px/1 var(--bd);text-align:center}
+.tl button::before{content:"";display:block;width:12px;height:12px;border-radius:50%;background:var(--panel);border:2px solid var(--rule);margin:3px auto 8px;transition:.3s}
+.tl button.on{color:var(--ink)}
+.tl button.on::before,.tl button.done::before{background:var(--gold);border-color:var(--gold)}
+.tl button:first-of-type{transform:none}.tl button:first-of-type::before{margin-left:0}
+.tl button.l{transform:translateX(-100%)}.tl button.l::before{margin-right:0}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.ch{min-height:88vh;padding:12vh 0 8vh;opacity:.3;transition:opacity .35s}
+.ch.on{opacity:1}
+.d{font:400 clamp(36px,5vw,64px)/1.05 var(--hd);color:var(--gold);margin:0 0 12px}
+h2{font:600 24px/1.25 var(--bd);margin:0 0 14px}
+.ch p{margin:0 0 14px;max-width:30em}
+.ch .x{border-left:3px solid var(--gold);padding-left:14px;font-size:16px;line-height:1.55;color:var(--mute);margin-top:20px}
+.note{padding:9vh 4vw 12vh;max-width:1240px;margin:0 auto;color:var(--mute);font-size:16px;border-top:1px solid var(--rule)}
+.note p{max-width:46em;margin:0 0 10px}
+@media (max-width:820px){
+ .wrap{grid-template-columns:1fr;gap:0}
+ .fig{height:50vh;padding:8px 0 4px;background:var(--bg);z-index:3}
+ .cap{font-size:14px;margin:8px 0 6px}
+ .tl button{font-size:11px}
+ .ch{min-height:70vh;padding:8vh 0 6vh}
+ body{font-size:18px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+<h1>The Maurya Empire: 136 years that shaped a subcontinent</h1>
+<p>A kingdom on the Ganges became the first state to unite most of South Asia, and then, within two generations of its greatest ruler, it was gone. Scroll to watch the map grow and shrink.</p>
+</header>
+
+<main class="wrap">
+<div class="fig">
+ <div class="sheet">
+ <svg viewBox="0 0 400 380" role="img" aria-label="Schematic map of South Asia showing the extent of Mauryan rule at each stage">
+  <defs><clipPath id="cl"><path id="op" d="M147 12L189 48L220 96L273 126L336 132L388 120L368 168L336 186L304 194L284 198L263 222L231 252L210 276L212 300L208 330L189 354L184 359L171 338L158 306L145 270L134 228L132 198L105 206L92 187L105 180L89 174L73 162L68 152L42 154L16 154L16 144L10 108L8 84L10 48L32 30L63 12L105 8Z"/></clipPath></defs>
+  <use href="#op" class="land"/>
+  <path class="river" d="M220 92C240 110 255 130 270 142S296 168 304 192"/>
+  <path class="river" d="M147 36C120 80 100 110 90 150S76 170 73 168"/>
+  <g clip-path="url(#cl)">
+   <polygon class="t nanda" id="p1" points="210,126 273,123 299,150 284,174 242,168 215,150"/>
+   <polygon class="t g" id="p2" points="32,30 105,12 147,24 210,84 273,123 304,144 299,180 262,198 210,186 158,198 126,198 95,186 68,156 21,150 10,108 10,60"/>
+   <polygon class="t g" id="p3" points="32,30 105,12 147,24 210,84 273,123 304,144 310,186 280,214 240,250 212,290 150,288 134,236 126,198 95,186 68,156 21,150 10,108 10,60"/>
+   <polygon class="t g" id="p4" points="336,126 336,180 294,198 263,222 220,258 200,300 168,312 147,288 137,228 131,198 95,186 68,156 21,150 10,108 9,60 32,30 105,12 147,18 200,60 231,96 273,120"/>
+   <polygon class="t g" id="p5" points="210,120 273,120 304,150 290,180 240,180 205,150"/>
+   <polygon class="t" id="peak" points="336,126 336,180 294,198 263,222 220,258 200,300 168,312 147,288 137,228 131,198 95,186 68,156 21,150 10,108 9,60 32,30 105,12 147,18 200,60 231,96 273,120"/>
+  </g>
+  <g class="city" data-f="0"><circle cx="264" cy="149" r="5"/><text x="272" y="146">Pataliputra</text></g>
+  <g class="city" data-f="2"><circle cx="134" cy="52" r="4"/><text x="142" y="50">Taxila</text></g>
+  <g class="city" data-f="3"><circle cx="166" cy="178" r="4"/><text x="174" y="176">Ujjain</text></g>
+  <g class="city" data-f="5"><circle cx="271" cy="214" r="4"/><text x="226" y="230">Tosali</text></g>
+  <g class="city" data-f="5"><circle cx="174" cy="272" r="4"/><text x="182" y="274">Suvarnagiri</text></g>
+ </svg>
+ </div>
+ <p class="cap" id="cap"></p>
+ <div class="tl" id="tl"><i id="fill"></i></div>
+</div>
+
+<div class="chs">
+<section class="ch" data-y="340" data-x="0"><p class="d">c. 340 BCE</p><h2>The richest kingdom on the Ganges</h2><p>Magadha, ruled by the Nanda dynasty from Pataliputra, had money, river trade and a huge army. When Alexander’s soldiers refused to march past the Beas in 326 BCE, one reason given by Greek writers was fear of exactly this army.</p><p>The Nandas were rich, but according to later accounts they were not loved.</p><p class="x">Pataliputra, near today’s Patna, stood where the Son meets the Ganges. Greek writers called it Palibothra.</p></section>
+<section class="ch" data-y="321" data-x="12.3"><p class="d">c. 321 BCE</p><h2>A young man and his adviser</h2><p>Chandragupta Maurya overthrew the last Nanda king and took Pataliputra. Tradition credits a brahmin teacher, Chanakya, also called Kautilya, as the planner behind it.</p><p>The Arthashastra, a manual of statecraft linked to Kautilya, describes spies, taxes and armies in blunt detail. Scholars still argue about when it was actually written.</p><p class="x">Sources disagree on Chandragupta’s origins. Buddhist tradition ties the name Maurya to a clan called the Moriyas, whose land was said to be full of peacocks. Greek and Indian texts both mention armed women guarding the king.</p></section>
+<section class="ch" data-y="305" data-x="22.6"><p class="d">c. 305 BCE</p><h2>Seleucus meets his match</h2><p>Alexander’s old general Seleucus came east to recover his master’s conquests and found a state he could not beat. The deal he accepted handed Chandragupta lands in what is now Afghanistan and Baluchistan, and Seleucus got 500 war elephants in return.</p><p>His ambassador Megasthenes lived at Pataliputra and wrote a book about it. Only quotations from other authors survive.</p><p class="x">Megasthenes, quoted by later writers, described Pataliputra as ringed by a wooden wall with hundreds of towers.</p><p class="x">Ancient sources also mention a marriage alliance sealing the treaty, though they do not say exactly who married whom.</p></section>
+<section class="ch" data-y="297" data-x="27.7"><p class="d">c. 297 BCE</p><h2>Down into the Deccan</h2><p>Jain tradition says Chandragupta gave up the throne and went south to fast in the manner of a monk. His son Bindusara then pushed the borders deep into the peninsula.</p><p>Remarkably little was written about him. What we have are fragments, a few Greek references and his son’s later fame.</p><p class="x">Greek writers call him Amitrochates, usually explained as a version of a Sanskrit title meaning slayer of foes. He once asked Antiochus, Seleucus’s son, for sweet wine, dried figs and a philosopher. The wine and figs arrived; the reply was that philosophers were not for sale.</p></section>
+<section class="ch" data-y="Rule" data-x="39"><p class="d">c. 300–260 BCE</p><h2>How a huge state was run</h2><p>No ruler could govern this much land from one city. Royal princes and trusted officials ran the regions, from Taxila in the northwest to Ujjain in the west. Tradition says Ashoka himself governed at Ujjain, and was sent to put down a revolt at Taxila, before he became king.</p><p>The other pillar was the army. Ancient writers credit Chandragupta with hundreds of thousands of soldiers and thousands of elephants. The figures may be inflated, but they show how outsiders saw him.</p><p class="x">A great road, later called the Uttarapatha, ran from the northwest across the plains toward Pataliputra. The Arthashastra describes officials who checked prices, weights and measures along such routes. Trade ran largely on silver punch-marked coins.</p></section>
+<section class="ch" data-y="261" data-x="51.0"><p class="d">c. 261 BCE</p><h2>Kalinga, and a change of heart</h2><p>Bindusara’s son Ashoka conquered Kalinga, roughly today’s Odisha, on the east coast. In his own words, carved on rock, about a hundred thousand people died and a hundred and fifty thousand were deported. He wrote that he felt remorse.</p><p>He turned to dhamma, a code of moral conduct, and had it inscribed on rocks and pillars from Afghanistan to Karnataka, in several languages. At its peak the empire covered roughly five million square kilometres, by common estimates.</p><p class="x">Ashoka kept his army and still punished crime. Dhamma was a public ethic, not a retreat from ruling, and Rock Edict XIII even warns forest peoples not to cause trouble.</p></section>
+<section class="ch" data-y="250" data-x="58.1"><p class="d">c. 250 BCE</p><h2>Ashoka’s word on stone</h2><p>His messages went up on cliffs and on polished sandstone pillars, some taller than a three-storey building and weighing tens of tonnes, hauled long distances from the quarries near Chunar. Most are in Prakrit written in Brahmi; in the northwest, Kharosthi, Greek and Aramaic were used instead.</p><p>The edicts speak of kindness to servants, tolerance between sects, medical care for people and animals, and wells and shade trees along roads. Envoys went abroad, and tradition says his son Mahinda carried Buddhism to Sri Lanka.</p><p class="x">Ashoka called himself “Beloved of the Gods” and used the title Piyadasi. His own name appears in only a few inscriptions.</p><p class="x">At Lumbini, the Buddha’s birthplace, a pillar records Ashoka’s visit and a tax cut: the village was to pay only an eighth of its produce.</p></section>
+<section class="ch" data-y="232" data-x="69.7"><p class="d">c. 232 BCE</p><h2>The empire outlives its emperor</h2><p>Ashoka died after about thirty-seven years in power. The state he left behind was huge, expensive to run and held together by officials answerable to the king.</p><p>Little is known about his successors. Historians point to succession disputes, shrinking revenue, powerful provincial governors and pressure from Greek kingdoms in the northwest. They disagree about which mattered most.</p><p class="x">Names such as Dasharatha and Samprati appear in later lists of Maurya kings, but Buddhist, Jain and Puranic king lists do not agree with one another.</p></section>
+<section class="ch" data-y="185" data-x="100"><p class="d">c. 185 BCE</p><h2>A parade, and an assassination</h2><p>Later texts say the last Maurya king, Brihadratha, was killed while reviewing his troops by his own commander, Pushyamitra Shunga, who founded a new dynasty.</p><p>By then the Mauryas held little beyond the Magadha heartland, and the old empire had already broken into pieces.</p><p class="x">The Shungas ruled much of central and eastern India for about a century. In the northwest, Bactrian Greeks moved into old Mauryan lands, and in the Deccan the Satavahanas became a major power.</p></section>
+<section class="ch" data-y="Legacy" data-x="100" data-nb="1"><p class="d">After 185 BCE</p><h2>Forgotten, then found</h2><p>For centuries Ashoka was mostly a figure in Buddhist legend, and his inscriptions could not be read. In the 1830s James Prinsep deciphered the Brahmi script, and a king who called himself Piyadasi began to speak again.</p><p>It took until 1915, when an inscription at Maski named Ashoka outright, to be sure who he was. Today the Lion Capital from Sarnath is India’s national emblem, and the wheel at the centre of the national flag is the Ashoka Chakra, taken from the same capital.</p><p class="x">One reading of the story is that a centralised state depends heavily on its ruler. Others stress money, regional governors and outside pressure, and the debate is still open.</p></section>
+</div>
+</main>
+
+<footer class="note">
+<p>The map is schematic. Borders, rivers and coastlines are simplified and the territories are approximate, because the sources do not allow precise frontiers. Dates are rounded, and many early events rely on later traditions. The Kalinga casualty figures come from Ashoka’s Rock Edict XIII and may be exaggerated.</p>
+</footer>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},all=function(s){return [].slice.call(document.querySelectorAll(s))};
+var chs=all('.ch'),tl=$('#tl'),fill=$('#fill'),cap=$('#cap');
+var P=['p1','p2','p3','p4','p5'].map(function(i){return document.getElementById(i)}),pk=$('#peak'),cities=all('.city');
+var C=[
+ 'Magadha, the core of the Nanda kingdom around the Ganges.',
+ 'Chandragupta takes the Nanda lands. The same territory, now Maurya.',
+ 'After the treaty with Seleucus, the empire reaches into Afghanistan and Baluchistan.',
+ 'Bindusara extends rule south into the Deccan.',
+ 'Provinces, governors and a large army hold the territory together.',
+ 'Ashoka’s peak: from Afghanistan to Bengal and Karnataka. Only the far south stays independent.',
+ 'Edicts carved on rock and pillars carry Ashoka’s message across the empire.',
+ 'Still large on the map, but increasingly hard to hold together.',
+ 'Only the Magadha heartland is left. The dashed line marks the old limit.',
+ 'The empire is gone. The inscriptions remain.'
+];
+var S=[[1,0,0,0,0,0],[1,0,0,0,0,0],[0,1,0,0,0,0],[0,0,1,0,0,0],[0,0,1,0,0,0],[0,0,0,1,0,0],[0,0,0,1,0,0],[0,0,0,.4,0,1],[0,0,0,0,1,1],[0,0,0,0,1,1]];
+var BD=['#1b2a4e','#1c3260','#143f5a','#14474a','#2b3367','#4a2b5c','#5a2a52','#4a2a45','#33232f','#12363a'],BL=['#eef3fb','#e9f0fb','#e4f3f8','#e5f5ee','#eeeafa','#f9ece0','#fbe8ee','#f8e6e1','#f1e3e8','#e1f5ef'],
+AD=['#9fb4e8','#f2b84b','#5ad1e0','#7fe0a8','#c3a8f0','#ffa94d','#ff7aa8','#ef8a7a','#d58aa8','#46d1b3'],AL=['#4a63a8','#a8660a','#0a7f90','#1a7a50','#6a45b0','#b85400','#b8325f','#b8473a','#8f3f63','#0d7f69'],
+TD=['#f2b84b','#f2b84b','#e9c04e','#f0a93e','#ee9a3a','#ff9340','#ff9340','#d9785f','#b86a78','#46d1b3'],TL=['#d99a1f','#d99a1f','#d4a017','#e08a1a','#e07a14','#e5700f','#e5700f','#c8624a','#a85464','#0d9e82'];
+chs.forEach(function(s,i){var b=document.createElement('button');b.style.left=s.dataset.x+'%';b.textContent=s.dataset.y==='185'?'185 BCE':s.dataset.y;if(s.dataset.y==='185')b.className='l';b.hidden=!!s.dataset.nb;b.setAttribute('aria-label',s.querySelector('h2').textContent);b.onclick=function(){s.scrollIntoView({behavior:'smooth',block:'center'})};tl.appendChild(b)});
+var bs=all('#tl button');
+function set(i){
+ chs.forEach(function(s,j){s.classList.toggle('on',i===j)});
+ var o=S[i];P.forEach(function(p,j){p.style.opacity=o[j]});pk.style.opacity=o[5];
+ P[0].classList.toggle('nanda',i===0);P[0].classList.toggle('g',i>0);
+ cities.forEach(function(c){c.style.opacity=(+c.dataset.f<=i)?1:0});
+ cap.textContent=C[i];var th=document.documentElement.dataset.theme,dk=th?th==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.body.style.backgroundColor=(dk?BD:BL)[i];document.documentElement.style.setProperty('--gold',(dk?AD:AL)[i]);document.documentElement.style.setProperty('--terr',(dk?TD:TL)[i]);
+ bs.forEach(function(b,j){b.classList.toggle('on',i===j);b.classList.toggle('done',j<i)});
+ fill.style.width=chs[i].dataset.x+'%';
+}
+set(0);
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting)set(chs.indexOf(en.target))})},{rootMargin:'-42% 0px -42% 0px',threshold:0});
+chs.forEach(function(s){io.observe(s)});
+})();
+</script>
+</body>
+</html>
